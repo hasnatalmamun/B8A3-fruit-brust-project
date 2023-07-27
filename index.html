@@ -21,7 +21,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!--  -->
+    <!-- tailwind desain -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'banner-bg-team': "url('./images/team.png')",
+                    }
+                }
+            }
+        }
+    </script>
 
 </head>
 
@@ -46,8 +57,10 @@
 
             <div class="hidden md:block">
                 <div class="flex items-center">
-                    <div class=" md:w-[15rem] lg:w-[23.375rem] h-[3.5rem] text-right bg-white rounded-l-[3.125rem]">
-                        <input class="" type="text" name="" id="">
+                    <div class=" bg-white rounded-l-[3.125rem]">
+                        <input placeholder="Search here"
+                            class=" pl-8 md:w-[15rem] lg:w-[23.375rem] h-[3.5rem]  rounded-l-[3.125rem]" type="text"
+                            name="" id="">
                     </div>
                     <div
                         class=" flex items-center justify-center gap-10 h-[3.5rem] w-[3.5rem] text-[1rem] text-black bg-white rounded-r-[3.125rem]">
@@ -71,7 +84,8 @@
                         <p class=" text-white text-xl py-7">
                             We supply highly quality organic products
                         </p>
-                        <a href=""> <button class="btn btn-error bg-[#F85559] text-white rounded-lg">Shop Now</button></a>
+                        <a href=""> <button class="btn btn-error bg-[#F85559] text-white rounded-lg">Shop
+                                Now</button></a>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
@@ -212,7 +226,7 @@
         </section>
 
         <!-- all card section -->
-        <section class="my-24 max-w-[90rem] mx-auto">
+        <section class="my-24 max-w-[90rem] mx-auto font-lato">
             <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <!-- first card -->
                 <div class="card bg-base-100 p-9 border border-gray-400">
@@ -229,7 +243,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" />
                         </div>
                         <div class="text-center space-y-4 mt-4">
-                            
+
                             <p><a class="text-red-500" href="">Details</a></p>
                         </div>
                     </div>
@@ -249,7 +263,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" />
                         </div>
                         <div class="text-center space-y-4 mt-4">
-                            
+
                             <p><a class="text-red-500" href="">Details</a></p>
                         </div>
                     </div>
@@ -269,7 +283,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" />
                         </div>
                         <div class="text-center space-y-4 mt-4">
-                            
+
                             <p><a class="text-red-500" href="">Details</a></p>
                         </div>
                     </div>
@@ -289,7 +303,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" />
                         </div>
                         <div class="text-center space-y-4 mt-4">
-                            
+
                             <p><a class="text-red-500" href="">Details</a></p>
                         </div>
                     </div>
@@ -300,19 +314,83 @@
                 <a href=""> <button class="btn btn-error bg-[#F85559] text-white rounded-lg">Shop All</button></a>
             </div>
         </section>
+
         <!-- meet the banner section -->
-        <section class="max-w-[90em] mx-auto">
-            <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                  <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary">Get Started</button>
-                  </div>
+        <section class="font-lato">
+           <div class=" bg-banner-bg-team max-w-[90rem] min-h-[43.125rem] mx-auto text-center  bg-blend-overlay bg-opacity-50 rounded-lg bg-black ">
+            <h3 class="lato text-5xl font-semibold pt-32 pb-6 text-white">
+                Meet the team Section
+            </h3>
+            <p class="lato text-base pb-12 text-white ">
+                Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+                literature from 45 BC, making it over 2000 years old.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[60rem] mx-auto text-white">
+                <div class="flex flex-col items-center gap-2">
+                    <div class="text-center">
+                        <img src="./images/member1.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-semibold pt-3">Awlad Hossain</h3>
+                    <p class="text-xs">Fruits Expert</p>
+                    <p class="space-x-1 text-white text-[.8rem] flex gap-1 pb-4">
+                        <i
+                            class="fa-brands fa-facebook-f w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                        <i
+                            class="fa-brands fa-twitter  w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                        <i
+                            class="fa-brands fa-linkedin-in  w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                    </p>
                 </div>
-              </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="text-center">
+                        <img src="./images/member2.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-semibold pt-3">Safia Chowdhury</h3>
+                    <p class="text-xs">Fruits Expert</p>
+                    <p class="space-x-1 text-white text-[.8rem] flex gap-1 pb-4">
+                        <i
+                            class="fa-brands fa-facebook-f w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                        <i
+                            class="fa-brands fa-twitter  w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                        <i
+                            class="fa-brands fa-linkedin-in  w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                    </p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="text-center">
+                        <img src="./images/member3.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-semibold pt-3">Rokib Hossain</h3>
+                    <p class="text-xs">Fruits Expert</p>
+                    <p class="space-x-1 text-white text-[.8rem] flex gap-1 pb-4">
+                        <i
+                            class="fa-brands fa-facebook-f w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                        <i
+                            class="fa-brands fa-twitter  w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                        <i
+                            class="fa-brands fa-linkedin-in  w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                    </p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="text-center">
+                        <img src="./images/member4.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-semibold pt-3">Chaity</h3>
+                    <p class="text-xs">Fruits Expert</p>
+                    <p class="space-x-1 text-white text-[.8rem] flex gap-1 pb-4">
+                        <i
+                            class="fa-brands fa-facebook-f w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                        <i
+                            class="fa-brands fa-twitter  w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                        <i
+                            class="fa-brands fa-linkedin-in  w-[1.8rem] h-[1.8rem] bg-[#F85559] flex items-center justify-center rounded-full"></i>
+                    </p>
+                </div>
+            </div>
+           </div>
         </section>
+        <!-- Why Choose Us -->
+        
     </main>
     <footer class="footer footer-center p-10 bg-[#121212] font-lato ">
         <div>
